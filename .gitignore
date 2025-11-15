@@ -1,0 +1,66 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+procsim
+procsim_driver
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Core dumps
+core
+
+# Output files
+output*/
+*.output
+
+# Trace files (if you don't want to track them)
+# traces/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compiler-generated files
+*.gch
+*.pch
+
+# Static and dynamic libraries
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Backup files
+*.bak
+*.backup
+
+# PDFs (if you don't want assignment docs in repo)
+# *.pdf
+
+*.zip
+*.pdf
+*.tar.gz
+*.aux
+*.log
+*.pkg
+*.trace
