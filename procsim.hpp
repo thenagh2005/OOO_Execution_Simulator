@@ -150,6 +150,14 @@ class res_table {
             }
         }
 
+        void fire_ready_instructions() {
+            for (auto& entry : entries) {
+                if (entry.is_src1_ready() && entry.is_src2_ready() && !entry.is_fired()) {
+                    entry.set_fired(true);
+                }
+            }
+        }
+
         size_t size() const { return entries.size();}
         std::vector<res_table_entry>& get_entries() { return entries;}
     private:
