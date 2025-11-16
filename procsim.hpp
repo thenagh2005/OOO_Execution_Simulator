@@ -158,6 +158,25 @@ class res_table {
             }
         }
 
+        void remove_completed_instructions() {
+            for (int i = entries.size()-1; i >= 0; i--) {
+                if (entries[i].is_complete()) {
+                    //Remove entry
+
+                    entries.erase(entries.begin() + i);
+                }
+            }
+        }
+
+        void complete_instruction(int tag) {
+            for (auto& entry : entries) {
+                if (entry.get_tag() == tag) {
+                    entry.set_complete(true);
+                    break;
+                }
+            }
+        }
+
         size_t size() const { return entries.size();}
         std::vector<res_table_entry>& get_entries() { return entries;}
     private:
